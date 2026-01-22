@@ -1,0 +1,50 @@
+body {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.box {
+    border: 2px solid black;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* px */
+.px-box {
+    width: 200px;
+}
+
+/* % */
+.parent {
+    width: 400px;
+    border: 2px dashed gray;
+    padding: 10px;
+}
+
+.percent-box {
+    width: 50%;
+}
+
+/* vw */
+.vw-box {
+    width: 50vw;
+}
+
+/* vh */
+.vh-box {
+    height: 20vh;
+}
+
+/* em */
+.em-parent {
+    font-size: 20px;
+}
+
+.em-text {
+    font-size: 2em;
+}
+
+/* rem */
+.rem-text {
+    font-size: 2rem;
+}
