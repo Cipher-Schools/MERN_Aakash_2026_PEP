@@ -1,0 +1,30 @@
+/* Default behavior */
+.default-inline {
+    border: 1px solid black;
+}
+
+.default-block {
+    border: 1px solid black;
+}
+
+/* Span behaving like block */
+.span-to-block {
+    display: block;
+    border: 2px solid blue;
+    margin: 10px 0;
+}
+
+/* Div behaving like inline */
+.div-to-inline {
+    display: inline;
+    border: 2px solid red;
+}
+
+/* Inline-block example */
+.inline-block {
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    border: 2px solid green;
+    margin: 5px;
+}

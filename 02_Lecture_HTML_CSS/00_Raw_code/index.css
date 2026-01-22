@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    color: blue;
+    font-size: 25px;
+}
+li {
+    
+    color: red;
+}
+.skills1 {
+    color: chartreuse;
+    border: 2px solid blue;
+}
+
+#skill_id{
+    font-size: 70px;
+}
+
+#inetrest_1{
+    border: 2px solid black !important;
+    
+}
+
+.parent{
+    border: 2px solid black;
+    margin-top: 10px;
+}

@@ -1,0 +1,24 @@
+/* Element Selector */
+p {
+    color: blue;
+}
+
+/* Class Selector */
+.para {
+    color: green;
+}
+
+/* ID Selector */
+#unique {
+    color: red;
+}
+
+/* List Item Element Selector */
+li {
+    color: purple;
+}
+
+/* ID on List Item */
+#unique-item {
+    color: orange;
+}

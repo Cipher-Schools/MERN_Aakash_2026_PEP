@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Model</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            margin: 30px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Independent Boxes</h2>
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+
+<hr>
+
+<h2>Nested Boxes</h2>
+
+<div class="box">
+    Parent Box
+    <div class="box">
+        Child Box
+        <div class="box">
+            Grandchild Box
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
