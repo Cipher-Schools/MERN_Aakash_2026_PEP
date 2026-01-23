@@ -1,0 +1,4 @@
+- Premitive Data types
+    - Datatype conversion
+    - Conditional statements (if/else)
+    - Loops
