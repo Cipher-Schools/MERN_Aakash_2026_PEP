@@ -41,17 +41,5 @@ console.log("Object Keys : ", Object.keys(username));
 
 let rollno = [10, 20, 50, 60]
 
-// console.log(rollno);
-// console.log(typeof []);
-
-
-
-
-
-let i = 10;
-let j = i++;
-i = i + 2;
-let m = --i;
-console.log(i);
-
-
+console.log(rollno);
+console.log(typeof []);

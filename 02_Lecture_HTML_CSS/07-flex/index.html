@@ -24,10 +24,17 @@
             height: 80px;
         }
 
-        #one { background-color: aqua; }
-        #two { background-color: lightcoral; }
-        #three { background-color: lightgreen; }
-        #four { background-color: lightskyblue; }
+        #one, #div_one { background-color: aqua; }
+        #two, #div_two { background-color: lightcoral; }
+        #three, #div_three { background-color: lightgreen; }
+        #four ,#div_four { background-color: lightskyblue; }
+    
+        #div_one {
+            flex-grow: 2;
+        }
+        #div_two {
+            flex-grow: 1;
+        }
     </style>
 </head>
 <body>
@@ -79,5 +86,21 @@
         <div class="child" id="two">6</div>
     </div>
 
+    <h2>Flex Grow</h2>
+    <div class="parent">
+        <div class="child" id="div_one">1</div>
+        <div class="child" id="div_two">2</div>
+        <div class="child" id="div_three">3</div>
+        <div class="child" id="div_four">4</div>
+    </div>
+
 </body>
 </html>
+
+<!-- What this code demonstrates:
+
+Flex container and items
+
+Alignment and spacing
+
+Responsive distribution using flex-grow -->

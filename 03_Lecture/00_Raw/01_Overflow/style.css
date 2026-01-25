@@ -3,13 +3,13 @@
     background-color: antiquewhite;
     width: 500px;
     height: 300px;
+    overflow:auto;
 }
 
 .child {
     border: 2px solid black;
     width: 150px;
     height: 70px;
-    overflow:auto;
 }
 
 #div1 {

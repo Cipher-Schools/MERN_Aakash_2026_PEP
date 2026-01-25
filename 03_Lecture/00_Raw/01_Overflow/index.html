@@ -5,26 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .para{
-            border: 2px solid black;
-            width: 250px;
-            height: 50px;
-            overflow:scroll;
+        .box {
+            width: 300px;
+            height: 200px;
+            border: 2px solid blue;
+            margin-bottom: 20px;
         }
+        .para {
+            color: red;
+        }
+
+        .visible { overflow: visible; }
+        .hidden { overflow: hidden; }
+        .scroll { overflow: scroll; }
+        .auto { overflow: auto; }
+
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="box visible">
+        <p class="para">
+            This text is too long and will overflow outside the box because overflow is set to visible.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repellendus est iste voluptatibus, voluptatum reprehenderit tempore corporis molestiae adipisci perspiciatis odit facere nulla dolorum recusandae cum pariatur quibusdam ducimus illo ea quod cupiditate. Ex assumenda blanditiis nihil nam perspiciatis aut.</p>
+    </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="box hidden">
+        <p class="para">
+            This text is too long and the extra content will be clipped when overflow is hidden.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repellendus est iste voluptatibus, voluptatum reprehenderit tempore corporis molestiae adipisci perspiciatis odit facere nulla dolorum recusandae cum pariatur quibusdam ducimus illo ea quod cupiditate. Ex assumenda blanditiis nihil nam perspiciatis aut.</p>
+    </div>
 
-    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse delectus exercitationem adipisci praesentium est similique alias voluptatem assumenda incidunt ad optio aut dolorem odio veritatis, minima eligendi non sequi id hic ratione nisi rerum et illo. Quibusdam, omnis itaque laborum optio magnam, ipsum nemo quasi, labore voluptas non animi.</p>
+    <div class="box scroll">
+        <p class="para">
+            This text is too long and scrollbars will always be shown.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repellendus est iste voluptatibus, voluptatum reprehenderit tempore corporis molestiae adipisci perspiciatis odit facere nulla dolorum recusandae cum pariatur quibusdam ducimus illo ea quod cupiditate. Ex assumenda blanditiis nihil nam perspiciatis aut.</p>
+    </div>
 
+    <div class="box auto">
+        <p class="para">
+            Scrollbars will appear only if the content overflows.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repellendus est iste voluptatibus, voluptatum reprehenderit tempore corporis molestiae adipisci perspiciatis odit facere nulla dolorum recusandae cum pariatur quibusdam ducimus illo ea quod cupiditate. Ex assumenda blanditiis nihil nam perspiciatis aut.</p>
+    </div>
 
     <div class="parent">
         <div class="child" id="div1">Div 1</div>
@@ -37,3 +63,11 @@
 
 </body>
 </html>
+
+<!-- What this code demonstrates:
+
+Different overflow values
+
+How browsers handle extra content
+
+When scrollbars appear -->

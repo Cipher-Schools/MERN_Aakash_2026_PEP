@@ -6,7 +6,6 @@
         - Static vs Dynamic Types Languages
         - Single Thread Nature of JavaScript
 
-    - Node Installation
     - var, let and const
         - Diffrence on the basis of re-declaration & re-assignment
         - Diffrence on the basis of scope ( Block Scope : {} )
@@ -24,7 +23,6 @@
     - Non Primitive Data Types
         - Object
         - Array
-        - Functions
     - Javascript Memory model to store Variables
 
     - Datatype conversion

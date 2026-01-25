@@ -8,7 +8,6 @@
         * {
             margin: 0px;
             padding: 0px;
-            /* text-align: center; */
             color: white;
         }
         body{
@@ -25,9 +24,7 @@
             
             gap: 10px;
 
-/* grid-auto-columns / rows */
             grid-auto-rows: 150px;
-
 
         }
 
@@ -62,6 +59,31 @@
             background-color: cadetblue;
         }
 
+        /* ********************* */
+
+        .grid-container {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 200px 1fr 1fr;
+            grid-template-rows: 100px auto;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        .item {
+            background-color: lightgreen;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .item1 {
+            grid-column: 1 / 3;
+        }
+
+        .item2 {
+            grid-row: 2 / 3;
+        }
+
     </style>
 </head>
 <body>
@@ -74,8 +96,23 @@
         <div class="child">6</div>
     </div>
 
+    <!-- <hr> -->
 
-
+    <div class="grid-container">
+        <div class="item item1">Header Area</div>
+        <div class="item">Sidebar</div>
+        <div class="item item2">Main Content</div>
+        <div class="item">Extra</div>
+    </div>
 
 </body>
 </html>
+
+
+<!-- What this code demonstrates:
+
+Creating grid layouts
+
+Defining rows and columns
+
+Placing items using grid lines -->
