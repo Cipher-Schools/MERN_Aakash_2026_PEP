@@ -41,7 +41,7 @@ ECMAScript is the official standard that defines how JavaScript should work. Jav
 
 Primitive types store single values and are immutable. Non-primitive types (objects and arrays) store collections and are mutable.
 
-Primitive values are stored directly in memory, while objects are stored by reference.
+Primitive values are stored directly in memory (Stack), while objects/Arrays are stored by reference(Heap).
 
 ---
 
